@@ -1,0 +1,18 @@
+<button mat-button (click)="isDrawerOpen = !isDrawerOpen" >
+  <mat-icon>
+    menu
+  </mat-icon>
+</button>
+Header
+
+<mat-drawer-container>
+
+  <mat-drawer mode="side" [opened]="isDrawerOpen"> 
+    <app-drawer></app-drawer> 
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <app-canvas></app-canvas>
+  </mat-drawer-content>
+
+</mat-drawer-container>
